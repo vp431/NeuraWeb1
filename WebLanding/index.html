@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuraCon — AI-Powered Sales for Real Estate</title>
+  <meta name="description" content="NeuraCon transforms real estate sales with AI voice agents, smart lead scoring, WhatsApp automation, and Facebook/Instagram ad integration. Close more deals, automatically.">
+  <meta name="keywords" content="NeuraCon, AI voice agent, real estate CRM, lead generation, WhatsApp automation, Facebook ads, lead scoring">
+  <meta name="theme-color" content="#06060f">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Particles Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">
+        <img src="assets/images/favicon.png" alt="NeuraCon Icon">
+        <span class="gradient-text">NeuraCon</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-cta">
+        <a href="login.html" class="nav-login">Login</a>
+        <a href="#waitlist" class="btn btn-primary btn-sm">Get Early Access</a>
+      </div>
+
+      <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Launching Q2 2026 — Built for Indian Real Estate
+          </div>
+
+          <h1 class="hero-title">
+            <span class="line">Your Leads Called.</span>
+            <span class="line"><span class="gradient-text">Your AI Answered.</span></span>
+          </h1>
+
+          <p class="hero-description">
+            NeuraCon is the all-in-one AI sales platform that calls your leads within minutes,
+            qualifies them automatically, and routes hot buyers to your agents — while you sleep.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#waitlist" class="btn btn-primary">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Request Early Access
+            </a>
+            <a href="#how-it-works" class="btn btn-secondary">
+              See How It Works
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-value" data-count="80">0%</div>
+              <div class="hero-stat-label">Leads Contacted in Under 5 Min</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value" data-count="3">0×</div>
+              <div class="hero-stat-label">More Conversions vs Manual</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value" data-count="24">0/7</div>
+              <div class="hero-stat-label">AI Agent Availability</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/images/dashboard-mockup.png" alt="NeuraCon Dashboard Preview" loading="eager">
+          <div class="hero-float-badge badge-1">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            &nbsp;Lead Qualified — Score: 87
+          </div>
+          <div class="hero-float-badge badge-2">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            &nbsp;AI Call in Progress…
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAIN POINTS ============ -->
+  <section class="pain-points" id="problems">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-label">The Problem</span>
+        <h2 class="section-title">Real Estate Sales is <span class="gradient-text">Broken</span></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Most builders and agents still rely on manual calls, scattered spreadsheets, and gut feeling. Here's what that costs you.</p>
+      </div>
+
+      <div class="pain-grid">
+        <div class="pain-card glass-card reveal">
+          <div class="pain-icon">⏰</div>
+          <h3>Leads Die in Minutes</h3>
+          <p>80% of leads go cold because no one calls them within the first 5 minutes. By the time your agent dials, they've moved on.</p>
+        </div>
+
+        <div class="pain-card glass-card reveal">
+          <div class="pain-icon">💸</div>
+          <h3>Wasted Ad Spend</h3>
+          <p>You spend lakhs on Facebook and Instagram ads, but have zero visibility into which campaigns actually bring serious buyers.</p>
+        </div>
+
+        <div class="pain-card glass-card reveal">
+          <div class="pain-icon">📊</div>
+          <h3>No Lead Intelligence</h3>
+          <p>All leads are treated equally. You can't tell who's ready to buy tomorrow and who's "just looking" — until it's too late.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-header reveal">
+        <span class="section-label">Platform</span>
+        <h2 class="section-title">Everything You Need to <span class="gradient-text">Close More Deals</span></h2>
+        <p class="section-subtitle">Five powerful modules working together to transform your real estate sales pipeline — from first click to site visit.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card glass-card reveal">
+          <div class="feature-icon blue">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="feature-content">
+            <h3>AI Voice Agent</h3>
+            <p>AI calls your leads within minutes of capture. It qualifies them, asks budget and timeline questions, handles objections, and <strong>books site visits automatically</strong> — in Hindi, English, or regional languages.</p>
+            <span class="feature-tag blue">OUTBOUND + INBOUND</span>
+          </div>
+        </div>
+
+        <div class="feature-card glass-card reveal">
+          <div class="feature-icon purple">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.66 0-3.203-.508-4.484-1.375l-.316-.188-2.684.797.797-2.684-.188-.316A7.953 7.953 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+          </div>
+          <div class="feature-content">
+            <h3>WhatsApp Automation</h3>
+            <p>Send property brochures, floor plans, and location pins. Schedule follow-ups and let your AI chat agent qualify leads on WhatsApp — all synced to your CRM.</p>
+            <span class="feature-tag purple">OFFICIAL API</span>
+          </div>
+        </div>
+
+        <div class="feature-card glass-card reveal">
+          <div class="feature-icon teal">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div class="feature-content">
+            <h3>Smart Lead Scoring</h3>
+            <p>AI computes a Buyer Readiness Score (0–100) based on engagement, budget fit, timeline urgency, sentiment, and 8+ other signals — so you always prioritize the right leads.</p>
+            <span class="feature-tag teal">AI-POWERED</span>
+          </div>
+        </div>
+
+        <div class="feature-card glass-card reveal">
+          <div class="feature-icon pink">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+          </div>
+          <div class="feature-content">
+            <h3>Facebook & Instagram Ads</h3>
+            <p>Leads from your Facebook and Instagram ad campaigns auto-sync into NeuraCon in real-time. See exactly which campaign brought each buyer and your true cost-per-deal.</p>
+            <span class="feature-tag pink">REAL-TIME SYNC</span>
+          </div>
+        </div>
+
+        <div class="feature-card feature-card-wide glass-card reveal">
+          <div class="feature-icon" style="background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.2);">
+            <svg width="28" height="28" fill="none" stroke="#F59E0B" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div class="feature-content">
+            <h3>Automated Site Visit Booking</h3>
+            <p>When a lead is qualified and ready, NeuraCon's AI agent <strong>schedules the site visit</strong> at the lead's preferred time, sends location and directions via WhatsApp, assigns the visit to your on-ground agent, and creates a reminder — all without a single manual step. Your team shows up prepared with full lead context.</p>
+            <span class="feature-tag" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B;">FULLY AUTOMATED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="how-header reveal">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">From Ad Click to <span class="gradient-text">Site Visit in 4 Steps</span></h2>
+        <p class="section-subtitle">Set it up once. Let AI handle the rest — all the way to the site visit.</p>
+      </div>
+
+      <div class="steps-container steps-4">
+        <div class="step-card glass-card reveal">
+          <div class="step-number">1</div>
+          <h3>Lead Comes In</h3>
+          <p>A buyer clicks your Facebook or Instagram ad and fills the form. NeuraCon captures the lead instantly — no manual imports, no delays.</p>
+        </div>
+
+        <div class="step-card glass-card reveal">
+          <div class="step-number">2</div>
+          <h3>AI Calls & Qualifies</h3>
+          <p>Within minutes, NeuraCon's AI agent calls the lead, asks qualifying questions, gauges budget and timeline, and scores them from 0–100.</p>
+        </div>
+
+        <div class="step-card glass-card reveal">
+          <div class="step-number">3</div>
+          <h3>Site Visit Booked</h3>
+          <p>For hot leads, the AI books a site visit at their preferred time. It sends the property location, directions, and confirmation via WhatsApp.</p>
+        </div>
+
+        <div class="step-card glass-card reveal">
+          <div class="step-number">4</div>
+          <h3>Your Agent Shows Up Prepared</h3>
+          <p>Your on-ground agent receives the visit assignment with full context — lead name, budget, preferences, call recording, and AI-recommended talking points.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTEGRATIONS ============ -->
+  <section class="integrations" id="integrations">
+    <div class="container reveal">
+      <span class="section-label">Integrations</span>
+      <h2 class="section-title">Works with <span class="gradient-text">What You Already Use</span></h2>
+      <p class="section-subtitle integrations-subtitle">NeuraCon connects directly to the platforms where your leads and sales live.</p>
+
+      <div class="integration-logos">
+        <div class="integration-item">
+          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#1877F2"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+          <span>Facebook</span>
+        </div>
+        <div class="integration-item">
+          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24"><defs><linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FD5"/><stop offset="50%" stop-color="#FF543E"/><stop offset="100%" stop-color="#C837AB"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="5" fill="url(#ig-grad)"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="white"/></svg>
+          <span>Instagram</span>
+        </div>
+        <div class="integration-item">
+          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.66 0-3.203-.508-4.484-1.375l-.316-.188-2.684.797.797-2.684-.188-.316A7.953 7.953 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+          <span>WhatsApp</span>
+        </div>
+        <div class="integration-item">
+          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.56c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.56-2.77c-.98.66-2.23 1.06-3.72 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.998 10.998 0 0012 23z" fill="#34A853"/><path d="M5.84 14.09a6.6 6.6 0 010-4.18V7.07H2.18A10.998 10.998 0 001 12c0 1.78.43 3.46 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          <span>Google Ads</span>
+        </div>
+        <div class="integration-item">
+          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#F22F46"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+          <span>Twilio</span>
+        </div>
+        <div class="integration-item">
+          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#EA4B71"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>n8n</span>
+        </div>
+        <div class="integration-item">
+          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#528FF0"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.66-.52.36-1.0.54-1.42.53-.47-.01-1.37-.27-2.04-.49-.82-.27-1.47-.42-1.41-.88.03-.24.37-.49 1.02-.75 4.01-1.74 6.69-2.89 8.03-3.45 3.82-1.59 4.62-1.87 5.14-1.88.11 0 .37.03.53.17.14.12.18.28.2.47-.01.06.01.24 0 .37z"/></svg>
+          <span>Telegram</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing-header reveal">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">Simple Plans, <span class="gradient-text">Serious Results</span></h2>
+        <p class="section-subtitle">Start small, scale as you close more deals. No hidden fees.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card glass-card reveal">
+          <div class="pricing-plan-name">Starter</div>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">For individual agents</p>
+          <div class="pricing-price">
+            <span>₹ —</span>
+            <div class="coming-soon-overlay">Coming Soon</div>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 200 leads / month</li>
+            <li>500 AI calls included</li>
+            <li>Basic CRM & pipeline</li>
+            <li>Facebook Lead Ad sync</li>
+            <li>Call recording & transcripts</li>
+          </ul>
+          <button class="btn btn-secondary" disabled>Notify Me</button>
+        </div>
+
+        <div class="pricing-card glass-card featured reveal">
+          <div class="pricing-plan-name">Growth</div>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">For brokerages & small teams</p>
+          <div class="pricing-price">
+            <span>₹ —</span>
+            <div class="coming-soon-overlay">Coming Soon</div>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 1,000 leads / month</li>
+            <li>2,000 AI calls included</li>
+            <li>WhatsApp integration</li>
+            <li>AI Lead Scoring</li>
+            <li>n8n workflow engine</li>
+            <li>Team & role management</li>
+            <li>Campaign analytics</li>
+          </ul>
+          <button class="btn btn-primary" disabled>Notify Me</button>
+        </div>
+
+        <div class="pricing-card glass-card reveal">
+          <div class="pricing-plan-name">Enterprise</div>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">For developers & large agencies</p>
+          <div class="pricing-price">
+            <span>₹ —</span>
+            <div class="coming-soon-overlay">Coming Soon</div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited leads</li>
+            <li>Unlimited AI calls</li>
+            <li>White-label options</li>
+            <li>API & webhook access</li>
+            <li>Custom workflows</li>
+            <li>Dedicated account manager</li>
+            <li>SLA & priority support</li>
+          </ul>
+          <button class="btn btn-secondary" disabled>Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / WAITLIST ============ -->
+  <section class="cta-section" id="waitlist">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <span class="section-label">Early Access</span>
+        <h2 class="section-title">Be the First to <span class="gradient-text">Transform Your Sales</span></h2>
+        <p class="section-subtitle">
+          Join the waitlist and get exclusive early access when we launch. No spam, ever.
+        </p>
+
+        <form class="waitlist-form" id="waitlistForm" onsubmit="handleWaitlist(event)">
+          <input type="email" id="waitlist-email" placeholder="you@company.com" required>
+          <button type="submit" class="btn btn-primary">Join Waitlist</button>
+        </form>
+
+        <div class="waitlist-success" id="waitlistSuccess">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          You're on the list! We'll reach out soon.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="navbar-logo">
+            <img src="assets/images/favicon.png" alt="NeuraCon Icon">
+            <span class="gradient-text">NeuraCon</span>
+          </a>
+          <p>AI-powered sales platform purpose-built for Indian real estate. Automate lead follow-ups, qualify buyers with AI, and close more deals.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">AI Voice Agent</a>
+          <a href="#features">WhatsApp Automation</a>
+          <a href="#features">Lead Scoring</a>
+          <a href="#features">Ad Integration</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 NeuraCon. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">📸</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
