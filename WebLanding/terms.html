@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — NeuraCon</title>
+  <meta name="description" content="NeuraCon Terms of Service — the rules and guidelines for using our platform.">
+  <meta name="theme-color" content="#06060f">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="legal.css">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <img src="assets/images/favicon.png" alt="NeuraCon Icon">
+        <span class="gradient-text">NeuraCon</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="login.html" class="nav-login">Login</a>
+        <a href="index.html#waitlist" class="btn btn-primary btn-sm">Get Early Access</a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <section class="legal-page">
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Home
+      </a>
+
+      <div class="legal-header">
+        <span class="section-label">Legal</span>
+        <h1 class="section-title">Terms of <span class="gradient-text">Service</span></h1>
+        <p class="legal-updated">Last updated: March 14, 2026</p>
+      </div>
+
+      <div class="legal-content glass-card">
+
+        <div class="legal-section">
+          <h2>1. Acceptance of Terms</h2>
+          <p>By accessing or using NeuraCon's platform, website, and services (the "Services"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree, please do not use the Services.</p>
+          <p>These Terms apply to all users, including individual sales executives, brokerages, agencies, and enterprise clients.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>2. Description of Services</h2>
+          <p>NeuraCon provides an AI-powered sales platform for real estate, including but not limited to:</p>
+          <ul>
+            <li>AI voice calling for lead qualification and follow-up.</li>
+            <li>WhatsApp automation for messaging and brochure delivery.</li>
+            <li>Lead scoring and analytics powered by artificial intelligence.</li>
+            <li>Integration with Facebook, Instagram, and Google ad platforms.</li>
+            <li>Automated site visit booking and agent assignment.</li>
+            <li>CRM and pipeline management tools.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>3. User Accounts</h2>
+          <ul>
+            <li>You must provide accurate and complete information when creating an account.</li>
+            <li>You are responsible for maintaining the security of your account credentials.</li>
+            <li>You must be at least 18 years old to use the Services.</li>
+            <li>You are responsible for all activities that occur under your account.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>4. Acceptable Use</h2>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Use the Services for any unlawful purpose or in violation of any applicable laws.</li>
+            <li>Upload false, misleading, or fraudulent lead data.</li>
+            <li>Use the AI calling features to harass, spam, or deceive contacts.</li>
+            <li>Attempt to reverse-engineer, decompile, or extract source code from the platform.</li>
+            <li>Resell or redistribute the Services without written authorization.</li>
+            <li>Interfere with or disrupt the Services or their underlying infrastructure.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>5. Data Ownership</h2>
+          <p>You retain ownership of all lead data, call recordings, and content that you upload or generate through the Services. NeuraCon does not claim ownership of your data.</p>
+          <div class="legal-highlight">
+            <p>The specific terms governing data usage — including any processing for service improvement — are defined in the service agreement between NeuraCon and each client. Clients maintain full control over the scope and boundaries of data processing.</p>
+          </div>
+        </div>
+
+        <div class="legal-section">
+          <h2>6. Billing and Payments</h2>
+          <ul>
+            <li>Paid plans are billed on a monthly or annual basis as selected during subscription.</li>
+            <li>All fees are non-refundable except as required by law or stated in your service agreement.</li>
+            <li>We reserve the right to change pricing with 30 days' advance notice.</li>
+            <li>AI credits and call minutes expire at the end of each billing cycle and do not roll over unless specified in your plan.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>7. AI-Powered Communications</h2>
+          <p>By using NeuraCon's AI calling and messaging features, you acknowledge that:</p>
+          <ul>
+            <li>AI-generated calls will be made on your behalf to leads in your account.</li>
+            <li>You are responsible for ensuring that you have appropriate consent to contact the leads in your database.</li>
+            <li>Call recordings and transcripts are stored and processed to deliver qualification insights.</li>
+            <li>You must comply with all applicable telecom regulations, DND registries, and messaging platform policies.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>8. Service Availability</h2>
+          <p>We strive to maintain high uptime, but the Services are provided "as is" and "as available." We do not guarantee uninterrupted or error-free operation. Scheduled maintenance will be communicated in advance when possible.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>9. Limitation of Liability</h2>
+          <p>To the maximum extent permitted by law, NeuraCon shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Services, including but not limited to loss of revenue, lost deals, or data loss.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>10. Termination</h2>
+          <p>Either party may terminate the account at any time. Upon termination:</p>
+          <ul>
+            <li>Your access to the Services will be revoked.</li>
+            <li>You may request export of your data within 30 days of termination.</li>
+            <li>After 30 days, your data will be securely deleted in accordance with our data retention policy.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>11. Changes to Terms</h2>
+          <p>We may modify these Terms from time to time. Material changes will be notified via email or in-app notification. Continued use after changes constitutes acceptance of the new Terms.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>12. Governing Law</h2>
+          <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in the relevant jurisdiction.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>13. Contact</h2>
+          <p>For questions about these Terms of Service, contact us at:</p>
+          <p><strong>Email:</strong> legal@neuracon.com</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <p>&copy; 2026 NeuraCon. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookie.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

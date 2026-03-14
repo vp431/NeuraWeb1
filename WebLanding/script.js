@@ -152,7 +152,7 @@ function initCounters() {
         if (isNaN(target)) return;
 
         const originalText = el.textContent;
-        const suffix = originalText.replace(/[0-9]/g, '');
+        const suffix = originalText.replace(/^[0-9]+/, '');
         let current = 0;
         const duration = 2000;
         const step = target / (duration / 16);
@@ -221,14 +221,35 @@ function handleWaitlist(e) {
   const form = document.getElementById('waitlistForm');
   const success = document.getElementById('waitlistSuccess');
   const emailInput = document.getElementById('waitlist-email');
+  const submitBtn = form.querySelector('button[type="submit"]');
 
-  if (emailInput.value) {
-    form.style.display = 'none';
-    success.classList.add('show');
+  if (!emailInput.value) return;
 
-    // Confetti burst
-    createConfetti();
-  }
+  // Disable button while submitting
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Submitting...';
+
+  fetch(form.action, {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' },
+    body: new FormData(form)
+  })
+  .then(response => {
+    if (response.ok) {
+      form.style.display = 'none';
+      success.classList.add('show');
+      createConfetti();
+    } else {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Join Waitlist';
+      alert('Something went wrong. Please try again.');
+    }
+  })
+  .catch(() => {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Join Waitlist';
+    alert('Network error. Please try again.');
+  });
 }
 
 // ---- Mini Confetti ---- //
