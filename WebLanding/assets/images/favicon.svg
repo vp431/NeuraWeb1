@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<style>.t{fill:#17160F}.n{stroke:#F5F1E8}@media (prefers-color-scheme:dark){.t{fill:#F5F1E8}.n{stroke:#17160F}}</style>
+<mask id="cut"><rect width="64" height="64" fill="#fff"/><circle cx="53" cy="11" r="11.5" fill="#000"/></mask>
+<g mask="url(#cut)"><g transform="rotate(-7 30 34)"><rect class="t" x="6" y="10" width="48" height="48" rx="13"/>
+<path class="n" d="M20 46V23l20 23V23" fill="none" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+<circle cx="53" cy="11" r="7.5" fill="#FFDC5E"/>
+</svg>

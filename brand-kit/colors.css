@@ -1,0 +1,26 @@
+:root {
+  /* Core */
+  --paper: #F5F1E8;        /* page background */
+  --paper-2: #ECE6D8;      /* alternate band */
+  --ink: #17160F;          /* text, logo tile, dark blocks */
+  --blue: #2540E0;         /* links, accents, the waitlist block */
+  --marker: #FFDC5E;       /* highlighter stroke, logo dot, tags */
+  --green: #12835A;        /* live and success states */
+
+  /* Text on paper */
+  --text-secondary: #4A483F;
+  --text-muted: #6B685D;
+
+  /* Card tints */
+  --tint-blue: #DFE5FF;
+  --tint-mint: #D9EEDF;
+  --tint-sand: #F0E4C4;
+  --tint-peach: #FADFCD;
+  --tint-lilac: #E7DFF6;
+
+  /* Type */
+  --font-display: 'Bricolage Grotesque', sans-serif;  /* headings, the name */
+  --font-main: 'Instrument Sans', sans-serif;         /* body */
+  --font-hand: 'Caveat', cursive;                     /* handwritten notes, used sparingly */
+  --font-mono: 'Geist Mono', monospace;               /* timestamps only */
+}

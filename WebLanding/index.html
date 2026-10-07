@@ -3,354 +3,473 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuraCon — AI-Powered Sales for Real Estate</title>
-  <meta name="description" content="NeuraCon transforms real estate sales with AI voice agents, smart lead scoring, WhatsApp automation, and Facebook/Instagram ad integration. Close more deals, automatically.">
-  <meta name="keywords" content="NeuraCon, AI voice agent, real estate CRM, lead generation, WhatsApp automation, Facebook ads, lead scoring">
-  <meta name="theme-color" content="#06060f">
+  <title>NeuraCon | The AI Sales Team for Real Estate</title>
+  <meta name="description" content="NeuraCon's AI agents call every new real estate lead within 60 seconds, qualify the buyer, and book the site visit, in Hindi, English and regional languages.">
+  <meta name="keywords" content="NeuraCon, AI sales agents, AI voice agent, real estate, lead qualification, WhatsApp automation, site visit booking, lead scoring">
+  <meta name="theme-color" content="#F5F1E8">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400;500;600&family=Caveat:wght@500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- Particles Background -->
-  <canvas id="particles-canvas"></canvas>
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- ============ NAVBAR ============ -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar" id="navbar" aria-label="Primary">
     <div class="container">
-      <a href="#" class="navbar-logo">
-        <img src="assets/images/favicon.png" alt="NeuraCon Icon">
-        <span class="gradient-text">NeuraCon</span>
+      <a href="#hero" class="navbar-logo">
+        <img src="assets/images/logo-mark.svg" alt="" width="32" height="32">
+        <span>NeuraCon</span>
       </a>
 
       <div class="nav-links" id="navLinks">
-        <a href="#features">Features</a>
-        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Agents</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#control">Control</a>
         <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
       </div>
 
       <div class="nav-cta">
         <a href="login.html" class="nav-login">Login</a>
-        <a href="#waitlist" class="btn btn-primary btn-sm">Get Early Access</a>
+        <a href="#waitlist" class="btn btn-primary btn-sm">Get early access</a>
       </div>
 
-      <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+      <button type="button" class="hamburger" id="hamburger" onclick="toggleMobile()" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
     </div>
   </nav>
 
+  <main id="main">
+
   <!-- ============ HERO ============ -->
   <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="hero-badge-dot"></span>
-            Launching Q2 2026
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <a href="#waitlist" class="launch-tag"><span class="dot"></span>Launching Q1 2027</a>
+
+        <h1 class="hero-title">Every lead called in <em>60 seconds.</em></h1>
+
+        <p class="hero-sub">
+          NeuraCon is an AI sales team for real estate. Its agents call each new lead within 60 seconds,
+          qualify the buyer, and book the site visit. Day or night, with no manual steps.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#waitlist" class="btn btn-primary">
+            Request early access
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#how-it-works" class="btn btn-secondary">See how it works</a>
+        </div>
+
+        <dl class="hero-facts">
+          <div>
+            <dt>Lead to first call</dt>
+            <dd>60s</dd>
           </div>
-
-          <h1 class="hero-title">
-            <span class="line">Your Leads Called.</span>
-            <span class="line"><span class="gradient-text">Your AI Answered.</span></span>
-          </h1>
-
-          <p class="hero-description">
-            NeuraCon is the all-in-one AI sales platform that calls your leads within minutes,
-            qualifies them automatically, and sends buyers straight to your property visit — while you sleep.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#waitlist" class="btn btn-primary">
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              Request Early Access
-            </a>
-            <a href="#how-it-works" class="btn btn-secondary">
-              See How It Works
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+          <div>
+            <dt>Agents on duty</dt>
+            <dd>24/7</dd>
           </div>
+          <div>
+            <dt>Languages</dt>
+            <dd class="is-text">Hindi · English · Regional</dd>
+          </div>
+        </dl>
+      </div>
 
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <div class="hero-stat-value" data-count="80">0%</div>
-              <div class="hero-stat-label">Leads Contacted in First 30 Min</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-value" data-count="3">0×</div>
-              <div class="hero-stat-label">More Conversions vs Manual</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-value" data-count="24">0/7</div>
-              <div class="hero-stat-label">AI Agent Availability</div>
-            </div>
+      <!-- Live agent run (illustrative) -->
+      <div class="run-wrap">
+      <p class="hand-note" aria-hidden="true">one lead, start to finish
+        <svg viewBox="0 0 60 44"><path d="M4 6c16 1 32 9 40 28"/><path d="M34 27l10 8 4-13"/></svg>
+      </p>
+      <figure class="run" id="agentRun">
+        <div class="run-bar">
+          <span class="run-title">Lead #2841</span>
+          <span class="run-live"><span class="dot"></span>Sample run</span>
+        </div>
+
+        <div class="run-lead">
+          <div class="avatar" aria-hidden="true">PS</div>
+          <div class="run-lead-info">
+            <strong>Priya Sharma</strong>
+            <span>3 BHK · Whitefield · Budget ₹1.2 Cr</span>
+          </div>
+          <div class="score">
+            <span class="score-num" data-score="87">87</span>
+            <span class="score-label">Buyer score</span>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <img src="assets/images/dashboard-mockup.png" alt="NeuraCon Dashboard Preview" loading="eager">
-          <div class="hero-float-badge badge-1">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
-            &nbsp;Lead Qualified — Score: 87
-          </div>
-          <div class="hero-float-badge badge-2">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            &nbsp;AI Call in Progress…
-          </div>
-        </div>
+        <ol class="run-steps">
+          <li class="run-step is-done" data-step data-delay="500">
+            <time>10:02:04</time>
+            <span class="run-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div class="run-body">
+              <b>Lead captured</b>
+              <span>Instagram lead ad · Skyline Residences</span>
+            </div>
+          </li>
+
+          <li class="run-step is-call" data-step data-delay="1300">
+            <time>10:02:58</time>
+            <span class="run-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <div class="run-body">
+              <b>Voice agent on call <span class="tag">54s after capture</span></b>
+              <div class="wave" aria-hidden="true"></div>
+              <div class="say" data-step data-delay="1400">
+                <span class="who">Agent</span>
+                <p lang="hi-Latn">Namaste Priya ji, main Skyline Residences se bol rahi hoon. Aap 3 BHK dekh rahi hain?</p>
+              </div>
+              <div class="say is-lead" data-step data-delay="1900">
+                <span class="who">Priya</span>
+                <p lang="hi-Latn">Haan, is mahine site dekhna chahti hoon.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="run-step is-done" data-step data-delay="2000" data-scores>
+            <time>10:06:40</time>
+            <span class="run-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div class="run-body">
+              <b>Qualified</b>
+              <span>Budget fit · Ready within 30 days · Positive sentiment</span>
+            </div>
+          </li>
+
+          <li class="run-step is-done" data-step data-delay="1200">
+            <time>10:06:52</time>
+            <span class="run-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div class="run-body">
+              <b>Site visit booked</b>
+              <span>Saturday, 11:00 AM · Assigned to Rahul</span>
+            </div>
+          </li>
+
+          <li class="run-step is-done" data-step data-delay="1000">
+            <time>10:06:55</time>
+            <span class="run-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div class="run-body">
+              <b>WhatsApp sent</b>
+              <span>Location pin, directions and brochure</span>
+            </div>
+          </li>
+        </ol>
+
+        <figcaption>Illustrative run with sample data.</figcaption>
+      </figure>
+      </div>
+    </div>
+
+    <!-- Integrations strip -->
+    <div class="container" id="integrations">
+      <div class="logos">
+        <span class="logos-label">Plugs into the channels you already run</span>
+        <ul>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+            Facebook
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            Instagram
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.66 0-3.203-.508-4.484-1.375l-.316-.188-2.684.797.797-2.684-.188-.316A7.953 7.953 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+            WhatsApp
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.56c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.56-2.77c-.98.66-2.23 1.06-3.72 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.998 10.998 0 0012 23z"/><path d="M5.84 14.09a6.6 6.6 0 010-4.18V7.07H2.18A10.998 10.998 0 001 12c0 1.78.43 3.46 1.18 4.93l3.66-2.84z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google Ads
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- ============ PAIN POINTS ============ -->
-  <section class="pain-points" id="problems">
+  <!-- ============ PROBLEM ============ -->
+  <section class="section" id="problems">
     <div class="container">
-      <div style="text-align: center;" class="reveal">
-        <span class="section-label">The Problem</span>
-        <h2 class="section-title">Real Estate Sales is <span class="gradient-text">Broken</span></h2>
-        <p class="section-subtitle" style="margin: 0 auto;">Most builders and agents still rely on manual calls, scattered spreadsheets, and gut feeling. Here's what that costs you.</p>
+      <div class="section-head reveal">
+        <span class="section-label">The problem</span>
+        <h2 class="section-title">Speed wins the buyer. <em>Most teams are too slow.</em></h2>
       </div>
 
-      <div class="pain-grid">
-        <div class="pain-card glass-card reveal">
-          <div class="pain-icon">⏰</div>
-          <h3>Leads Go Cold Fast</h3>
-          <p>80% of leads go cold because no one calls them within the first hour. By the time your sales executive dials, they've moved on.</p>
-        </div>
-
-        <div class="pain-card glass-card reveal">
-          <div class="pain-icon">💸</div>
-          <h3>Wasted Ad Spend</h3>
-          <p>You spend lakhs on Facebook and Instagram ads, but have zero visibility into which campaigns actually bring serious buyers.</p>
-        </div>
-
-        <div class="pain-card glass-card reveal">
-          <div class="pain-icon">📊</div>
-          <h3>No Lead Intelligence</h3>
-          <p>All leads are treated equally. You can't tell who's ready to buy tomorrow and who's "just looking" — until it's too late.</p>
-        </div>
+      <div class="problems">
+        <article class="problem reveal">
+          <span class="problem-n">01</span>
+          <h3>Leads go cold in minutes</h3>
+          <p>A buyer who fills your ad form is comparing other projects right now. If your first call comes hours later, someone else has already had the conversation.</p>
+        </article>
+        <article class="problem reveal">
+          <span class="problem-n">02</span>
+          <h3>Ad spend you can't trace</h3>
+          <p>You spend lakhs on Facebook and Instagram, but can't see which campaign produced a site visit and which one produced noise.</p>
+        </article>
+        <article class="problem reveal">
+          <span class="problem-n">03</span>
+          <h3>Every lead looks the same</h3>
+          <p>Without qualification, your team spends the same hour on a casual browser as on a buyer who is ready to book this month.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ FEATURES ============ -->
-  <section class="features" id="features">
+  <!-- ============ AGENTS ============ -->
+  <section class="section" id="features">
     <div class="container">
-      <div class="features-header reveal">
-        <span class="section-label">Platform</span>
-        <h2 class="section-title">Everything You Need to <span class="gradient-text">Close More Deals</span></h2>
-        <p class="section-subtitle">Five powerful modules working together to transform your real estate sales pipeline — from first click to site visit.</p>
+      <div class="section-head reveal">
+        <span class="section-label">The team</span>
+        <h2 class="section-title">Five agents. <em>One sales pipeline.</em></h2>
+        <p class="section-subtitle">Each agent owns one job and hands off to the next, from the first ad click to the buyer standing at your site.</p>
       </div>
 
-      <div class="features-grid">
-        <div class="feature-card glass-card reveal">
-          <div class="feature-icon blue">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <div class="bento">
+        <article class="agent agent-voice reveal">
+          <div class="agent-copy">
+            <span class="agent-role">Agent 01 · Voice</span>
+            <h3>The Caller</h3>
+            <p>Calls every new lead within 60 seconds of capture. Asks about budget and timeline, handles objections, and takes inbound calls too.</p>
+            <ul class="chips">
+              <li>Hindi</li>
+              <li>English</li>
+              <li>Regional languages</li>
+              <li>Outbound + inbound</li>
+            </ul>
           </div>
-          <div class="feature-content">
-            <h3>AI Voice Agent</h3>
-            <p>AI calls your leads within minutes of capture. It qualifies them, asks budget and timeline questions, handles objections, and <strong>books site visits automatically</strong> — in Hindi, English, or regional languages.</p>
-            <span class="feature-tag blue">OUTBOUND + INBOUND</span>
+          <div class="agent-visual" aria-hidden="true">
+            <div class="call-card">
+              <div class="call-top">
+                <span class="run-live"><span class="dot"></span>On call</span>
+                <span class="call-time">02:14</span>
+              </div>
+              <div class="wave wave-lg"></div>
+              <div class="call-line"><span>Budget</span><b>₹1.1 to 1.3 Cr</b></div>
+              <div class="call-line"><span>Timeline</span><b>Within 30 days</b></div>
+              <div class="call-line"><span>Interest</span><b>3 BHK, east facing</b></div>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="feature-card glass-card reveal">
-          <div class="feature-icon purple">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.66 0-3.203-.508-4.484-1.375l-.316-.188-2.684.797.797-2.684-.188-.316A7.953 7.953 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+        <article class="agent reveal">
+          <span class="agent-role">Agent 02 · Scoring</span>
+          <h3>The Qualifier</h3>
+          <p>Gives every lead a Buyer Readiness Score from 0 to 100, so your team works the right leads first.</p>
+          <div class="agent-visual" aria-hidden="true">
+            <div class="meter"><span style="width: 87%"></span></div>
+            <div class="meter-scale"><span>0</span><b>87</b><span>100</span></div>
+            <ul class="chips chips-sm">
+              <li>Budget fit</li>
+              <li>Timeline</li>
+              <li>Engagement</li>
+              <li>Sentiment</li>
+            </ul>
           </div>
-          <div class="feature-content">
-            <h3>WhatsApp Automation</h3>
-            <p>Send property brochures, floor plans, and location pins. Schedule follow-ups and let your AI chat agent qualify leads on WhatsApp — all synced to your CRM.</p>
-            <span class="feature-tag purple">OFFICIAL API</span>
-          </div>
-        </div>
+        </article>
 
-        <div class="feature-card glass-card reveal">
-          <div class="feature-icon teal">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        <article class="agent reveal">
+          <span class="agent-role">Agent 03 · WhatsApp</span>
+          <h3>The Follow-up</h3>
+          <p>Sends brochures, floor plans and location pins, answers questions, and keeps the conversation moving on the official WhatsApp API.</p>
+          <div class="agent-visual" aria-hidden="true">
+            <div class="bubble">Here are the floor plans for the 3 BHK you asked about.</div>
+            <div class="attach">
+              <span><svg class="i" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg>Brochure.pdf</span>
+              <span><svg class="i" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Location pin</span>
+            </div>
           </div>
-          <div class="feature-content">
-            <h3>Smart Lead Scoring</h3>
-            <p>AI computes a Buyer Readiness Score (0–100) based on engagement, budget fit, timeline urgency, sentiment, and 8+ other signals — so you always prioritize the right leads.</p>
-            <span class="feature-tag teal">AI-POWERED</span>
-          </div>
-        </div>
+        </article>
 
-        <div class="feature-card glass-card reveal">
-          <div class="feature-icon pink">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+        <article class="agent reveal">
+          <span class="agent-role">Agent 04 · Scheduling</span>
+          <h3>The Scheduler</h3>
+          <p>Books the site visit at the buyer's preferred time, sends directions, assigns your on-ground executive and sets the reminder.</p>
+          <div class="agent-visual" aria-hidden="true">
+            <div class="visit">
+              <div class="visit-date"><span>Sat</span><b>11:00</b></div>
+              <div class="visit-info">
+                <b>Site visit confirmed</b>
+                <span>Assigned to Rahul · Reminder set</span>
+              </div>
+            </div>
           </div>
-          <div class="feature-content">
-            <h3>Facebook & Instagram Ads</h3>
-            <p>Leads from your Facebook and Instagram ad campaigns auto-sync into NeuraCon in real-time. See exactly which campaign brought each buyer and your true cost-per-deal.</p>
-            <span class="feature-tag pink">REAL-TIME SYNC</span>
-          </div>
-        </div>
+        </article>
 
-        <div class="feature-card feature-card-wide glass-card reveal">
-          <div class="feature-icon" style="background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.2);">
-            <svg width="28" height="28" fill="none" stroke="#F59E0B" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <article class="agent reveal">
+          <span class="agent-role">Agent 05 · Ads</span>
+          <h3>The Analyst</h3>
+          <p>Syncs Facebook and Instagram leads in real time and shows which campaign brought each buyer, along with your true cost per deal.</p>
+          <div class="agent-visual" aria-hidden="true">
+            <div class="bars">
+              <div class="bar"><span>Campaign A</span><i style="width: 82%"></i></div>
+              <div class="bar"><span>Campaign B</span><i style="width: 46%"></i></div>
+              <div class="bar"><span>Campaign C</span><i style="width: 21%"></i></div>
+            </div>
+            <span class="bars-note">Site visits by campaign</span>
           </div>
-          <div class="feature-content">
-            <h3>Automated Site Visit Booking</h3>
-            <p>When a lead is qualified and ready, NeuraCon's AI agent <strong>schedules the site visit</strong> at the lead's preferred time, sends location and directions via WhatsApp, assigns the visit to your on-ground agent, and creates a reminder — all without a single manual step. Your team shows up prepared with full lead context.</p>
-            <span class="feature-tag" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B;">FULLY AUTOMATED</span>
-          </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- ============ HOW IT WORKS ============ -->
-  <section class="how-it-works" id="how-it-works">
+  <section class="section" id="how-it-works">
     <div class="container">
-      <div class="how-header reveal">
-        <span class="section-label">How It Works</span>
-        <h2 class="section-title">From Ad Click to <span class="gradient-text">Site Visit in 4 Steps</span></h2>
-        <p class="section-subtitle">Set it up once. Let AI handle the rest — all the way to the site visit.</p>
+      <div class="section-head reveal">
+        <span class="section-label">How it works</span>
+        <h2 class="section-title">One lead, <em>start to site visit.</em></h2>
+        <p class="section-subtitle">Set it up once. The agents run every lead through the same five moments.</p>
       </div>
 
-      <div class="steps-container steps-4">
-        <div class="step-card glass-card reveal">
-          <div class="step-number">1</div>
-          <h3>Lead Comes In</h3>
-          <p>A buyer clicks your Facebook or Instagram ad and fills the form. NeuraCon captures the lead instantly — no manual imports, no delays.</p>
-        </div>
-
-        <div class="step-card glass-card reveal">
-          <div class="step-number">2</div>
-          <h3>AI Calls & Qualifies</h3>
-          <p>Within minutes, NeuraCon's AI agent calls the lead, asks qualifying questions, gauges budget and timeline, and scores them from 0–100.</p>
-        </div>
-
-        <div class="step-card glass-card reveal">
-          <div class="step-number">3</div>
-          <h3>Site Visit Booked</h3>
-          <p>For hot leads, the AI books a site visit at their preferred time. It sends the property location, directions, and confirmation via WhatsApp.</p>
-        </div>
-
-        <div class="step-card glass-card reveal">
-          <div class="step-number">4</div>
-          <h3>Your Sales Executive Shows Up Prepared</h3>
-          <p>Your on-ground sales executive receives the visit assignment with full context — lead name, budget, preferences, call recording, and AI-recommended talking points.</p>
-        </div>
-      </div>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="timeline-t">T + 0s</span>
+          <h3>Lead comes in</h3>
+          <p>A buyer fills the form on your Facebook or Instagram ad. NeuraCon captures it instantly, with no imports and no delays.</p>
+        </li>
+        <li class="reveal">
+          <span class="timeline-t is-hot">T + 60s</span>
+          <h3>The agent calls</h3>
+          <p>Within 60 seconds the voice agent is on the phone, speaking the buyer's language.</p>
+        </li>
+        <li class="reveal">
+          <span class="timeline-t">On the call</span>
+          <h3>Qualified and scored</h3>
+          <p>It asks about budget, timeline and preferences, then scores the buyer from 0 to 100.</p>
+        </li>
+        <li class="reveal">
+          <span class="timeline-t">After the call</span>
+          <h3>Site visit booked</h3>
+          <p>Hot leads get a visit at their preferred time, with location and directions sent on WhatsApp.</p>
+        </li>
+        <li class="reveal">
+          <span class="timeline-t">Visit day</span>
+          <h3>Your executive arrives prepared</h3>
+          <p>Name, budget, preferences, the call recording and recommended talking points, all in hand.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- ============ INTEGRATIONS ============ -->
-  <section class="integrations" id="integrations">
-    <div class="container reveal">
-      <span class="section-label">Integrations</span>
-      <h2 class="section-title">Works with <span class="gradient-text">What You Already Use</span></h2>
-      <p class="section-subtitle integrations-subtitle">NeuraCon connects directly to the platforms where your leads and sales live.</p>
-
-      <div class="integration-logos">
-        <div class="integration-item">
-          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#1877F2"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-          <span>Facebook</span>
-        </div>
-        <div class="integration-item">
-          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="url(#ig-gradient)"/><defs><linearGradient id="ig-gradient" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFDC80"/><stop offset="40%" stop-color="#F56040"/><stop offset="65%" stop-color="#E1306C"/><stop offset="100%" stop-color="#833AB4"/></linearGradient></defs></svg>
-          <span>Instagram</span>
-        </div>
-        <div class="integration-item">
-          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.66 0-3.203-.508-4.484-1.375l-.316-.188-2.684.797.797-2.684-.188-.316A7.953 7.953 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
-          <span>WhatsApp</span>
-        </div>
-        <div class="integration-item">
-          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.56c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.56-2.77c-.98.66-2.23 1.06-3.72 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.998 10.998 0 0012 23z" fill="#34A853"/><path d="M5.84 14.09a6.6 6.6 0 010-4.18V7.07H2.18A10.998 10.998 0 001 12c0 1.78.43 3.46 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-          <span>Google Ads</span>
-        </div>
-        <div class="integration-item">
-          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#F22F46"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
-          <span>Twilio</span>
-        </div>
-        <div class="integration-item">
-          <svg class="int-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#EA4B71"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          <span>n8n</span>
-        </div>
+  <!-- ============ CONTROL ============ -->
+  <section class="section" id="control">
+    <div class="container control">
+      <div class="section-head reveal">
+        <span class="section-label">Control</span>
+        <h2 class="section-title">The agents do the work. <em>You stay in charge.</em></h2>
+        <p class="section-subtitle">Autonomous does not mean unsupervised. Everything the agents say and do is on the record and under your rules.</p>
       </div>
+
+      <ul class="control-list">
+        <li class="reveal">
+          <span class="control-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4"/></svg></span>
+          <div>
+            <h3>Every call recorded and transcribed</h3>
+            <p>Listen to any conversation or read it back, lead by lead.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="control-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg></span>
+          <div>
+            <h3>Clean handoff to your people</h3>
+            <p>Your sales executive closes the deal, with the full lead context in front of them.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="control-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg></span>
+          <div>
+            <h3>Workflows built around your process</h3>
+            <p>Shape how leads are qualified, followed up and routed to fit the way you sell.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="control-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <div>
+            <h3>Team roles and permissions</h3>
+            <p>Decide who sees which leads, campaigns and recordings.</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- ============ PRICING ============ -->
-  <section class="pricing" id="pricing">
+  <section class="section" id="pricing">
     <div class="container">
-      <div class="pricing-header reveal">
+      <div class="section-head is-center reveal">
         <span class="section-label">Pricing</span>
-        <h2 class="section-title">Simple Plans, <span class="gradient-text">Serious Results</span></h2>
-        <p class="section-subtitle">Start small, scale as you close more deals. No hidden fees.</p>
+        <h2 class="section-title">Hire the team that <em>fits your pipeline.</em></h2>
+        <p class="section-subtitle">Three plans. Prices in USD, billed monthly. Plans open at launch.</p>
       </div>
 
-      <div class="pricing-grid">
-        <div class="pricing-card glass-card reveal">
-          <div class="pricing-plan-name">Starter</div>
-          <p style="color: var(--text-muted); font-size: 0.85rem;">For individual sales executives</p>
-          <div class="pricing-price">
-            <span>₹ —</span>
-            <div class="coming-soon-overlay">Coming Soon</div>
-          </div>
-          <ul class="pricing-features">
-            <li>10,000 AI credits</li>
-            <li>5,000 call minutes</li>
-            <li>Basic CRM & pipeline</li>
-            <li>Facebook Lead Ad sync</li>
-            <li>Call recording & transcripts</li>
+      <div class="plans">
+        <article class="plan reveal">
+          <h3>Starter</h3>
+          <p class="plan-for">For individual agents and small brokers</p>
+          <div class="plan-price"><span class="amt">$200</span><span class="per">/ month</span></div>
+          <a href="#waitlist" class="btn btn-secondary btn-block">Get early access</a>
+          <ul class="plan-list">
+            <li>AI voice agent in Hindi and English</li>
+            <li>1,000 call minutes per month</li>
+            <li>Up to 500 leads per month</li>
+            <li>Facebook and Instagram lead sync</li>
+            <li>Automated site visit booking</li>
+            <li>Call recordings and transcripts</li>
+            <li>CRM and pipeline for 1 user</li>
           </ul>
-          <button class="btn btn-secondary" disabled>Notify Me</button>
-        </div>
+        </article>
 
-        <div class="pricing-card glass-card featured reveal">
-          <div class="pricing-plan-name">Growth</div>
-          <p style="color: var(--text-muted); font-size: 0.85rem;">For brokerages & small teams</p>
-          <div class="pricing-price">
-            <span>₹ —</span>
-            <div class="coming-soon-overlay">Coming Soon</div>
-          </div>
-          <ul class="pricing-features">
-            <li>50,000 AI credits</li>
-            <li>25,000 call minutes</li>
-            <li>WhatsApp integration</li>
-            <li>AI Lead Scoring</li>
-            <li>n8n workflow engine</li>
-            <li>Team & role management</li>
-            <li>Campaign analytics</li>
+        <article class="plan is-featured reveal">
+          <span class="plan-badge">our pick for teams</span>
+          <h3>Growth</h3>
+          <p class="plan-for">For brokerages and sales teams</p>
+          <div class="plan-price"><span class="amt">$500</span><span class="per">/ month</span></div>
+          <a href="#waitlist" class="btn btn-primary btn-block">Get early access</a>
+          <ul class="plan-list">
+            <li class="plan-plus">Everything in Starter, plus</li>
+            <li>3,000 call minutes per month</li>
+            <li>Up to 2,000 leads per month</li>
+            <li>WhatsApp follow-up agent</li>
+            <li>Buyer Readiness Score (0 to 100)</li>
+            <li>Regional language calling</li>
+            <li>Campaign analytics and cost per deal</li>
+            <li>Team roles for up to 10 users</li>
           </ul>
-          <button class="btn btn-primary" disabled>Notify Me</button>
-        </div>
+        </article>
 
-        <div class="pricing-card glass-card reveal">
-          <div class="pricing-plan-name">Enterprise</div>
-          <p style="color: var(--text-muted); font-size: 0.85rem;">For developers & large agencies</p>
-          <div class="pricing-price">
-            <span>₹ —</span>
-            <div class="coming-soon-overlay">Coming Soon</div>
-          </div>
-          <ul class="pricing-features">
-            <li>Unlimited leads</li>
-            <li>Unlimited AI calls</li>
+        <article class="plan reveal">
+          <h3>Enterprise</h3>
+          <p class="plan-for">For developers and large agencies</p>
+          <div class="plan-price"><span class="from">From</span><span class="amt">$1,000</span><span class="per">/ month</span></div>
+          <a href="#waitlist" class="btn btn-secondary btn-block">Talk to us</a>
+          <ul class="plan-list">
+            <li class="plan-plus">Everything in Growth, plus</li>
+            <li>Custom call volume and lead limits</li>
+            <li>Multiple projects and locations</li>
+            <li>Custom workflows and agent scripts</li>
+            <li>API and webhook access</li>
             <li>White-label options</li>
-            <li>API & webhook access</li>
-            <li>Custom workflows</li>
             <li>Dedicated account manager</li>
-            <li>SLA & priority support</li>
+            <li>SLA and priority support</li>
           </ul>
-          <button class="btn btn-secondary" disabled>Contact Sales</button>
-        </div>
+        </article>
       </div>
+
+      <p class="plans-note">Need something different? Enterprise is priced around your volume and the custom work you need.</p>
     </div>
   </section>
 
@@ -358,50 +477,54 @@
   <section class="cta-section" id="waitlist">
     <div class="container">
       <div class="cta-inner reveal">
-        <span class="section-label">Early Access</span>
-        <h2 class="section-title">Be the First to <span class="gradient-text">Transform Your Sales</span></h2>
+        <span class="section-label">Early access</span>
+        <h2 class="section-title">Put an AI sales team <em>on your next lead.</em></h2>
         <p class="section-subtitle">
-          Join the waitlist and get exclusive early access when we launch. No spam, ever.
+          Join the waitlist and get early access when we launch in Q1 2027. No spam, ever.
         </p>
 
         <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/xlgplaop" method="POST" onsubmit="handleWaitlist(event)">
-          <input type="email" id="waitlist-email" name="email" placeholder="you@company.com" required>
-          <button type="submit" class="btn btn-primary">Join Waitlist</button>
+          <label for="waitlist-email" class="sr-only">Work email</label>
+          <input type="email" id="waitlist-email" name="email" placeholder="you@company.com" autocomplete="email" required>
+          <button type="submit" class="btn btn-primary">Join waitlist</button>
         </form>
 
-        <div class="waitlist-success" id="waitlistSuccess">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
-          You're on the list! We'll reach out soon.
+        <p class="waitlist-error" id="waitlistError" role="alert"></p>
+
+        <div class="waitlist-success" id="waitlistSuccess" role="status">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          You're on the list. We'll reach out soon.
         </div>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer" id="contact">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#" class="navbar-logo">
-            <img src="assets/images/favicon.png" alt="NeuraCon Icon">
-            <span class="gradient-text">NeuraCon</span>
+          <a href="#hero" class="navbar-logo">
+            <img src="assets/images/logo-mark.svg" alt="" width="32" height="32">
+            <span>NeuraCon</span>
           </a>
-          <p>AI-powered sales platform for real estate. Automate lead follow-ups, qualify buyers with AI, and close more deals.</p>
+          <p>The AI sales team for real estate. Agents that call, qualify and book site visits for every lead.</p>
         </div>
 
         <div class="footer-col">
           <h4>Product</h4>
-          <a href="#features">AI Voice Agent</a>
-          <a href="#features">WhatsApp Automation</a>
-          <a href="#features">Lead Scoring</a>
-          <a href="#features">Ad Integration</a>
+          <a href="#features">AI agents</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#control">Control</a>
           <a href="#pricing">Pricing</a>
         </div>
 
         <div class="footer-col">
           <h4>Company</h4>
-          <a href="about.html">About Us</a>
-          <a href="#contact">Contact</a>
+          <a href="about.html">About us</a>
+          <a href="#waitlist">Early access</a>
         </div>
 
         <div class="footer-col">
@@ -415,9 +538,9 @@
       <div class="footer-bottom">
         <p>&copy; 2026 NeuraCon. All rights reserved.</p>
         <div class="footer-socials">
-          <a href="#" aria-label="Twitter">𝕏</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+          <a href="#" aria-label="X (Twitter)"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
         </div>
       </div>
     </div>
